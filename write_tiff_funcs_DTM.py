@@ -91,7 +91,7 @@ def write_xarray_to_GeoTiff(array, outfilename,north_up=True):
 
     # Some dimension info
     NBands = 1
-    NRows, NCols = array.values.shape
+    NRows, NCols, NBands = array.values.shape
 
     # create geotrans object
     geoTrans = create_geoTrans(array)
